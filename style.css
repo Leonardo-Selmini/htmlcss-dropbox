@@ -25,11 +25,22 @@ body {
   position: relative;
 }
 
-a.button {
+.btn-container {
+  height: 42px;
+  line-height: 42px;
+}
+
+a.btn {
   background-color: rgba(1, 96, 254, 1);
   color: white;
   text-decoration: none;
   padding: 10px;
+}
+
+.grey {
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(72, 72, 74);
 }
 
 /* header top - nav */
@@ -64,7 +75,9 @@ header nav li a {
   text-decoration: none;
 }
 
-nav a.button {
+nav .btn-container {
+  height: 50px;
+  line-height: 50px;
   margin-left: 30px;
 }
 
@@ -76,7 +89,7 @@ nav a.button {
   padding-top: 100px;
 }
 
-#jumbotron > .container {
+#jumbotron > div {
   width: 80%;
   margin: 0 auto;
 }
@@ -86,22 +99,16 @@ nav a.button {
   margin-bottom: 50px;
 }
 
-#jumbotron article.container {
+#jumbotron article.left {
   width: 35%;
 }
 
-#jumbotron article.container p {
-  line-height: 22.4px;
+#jumbotron article.left p {
+  line-height: 24px;
 }
 
-#jumbotron article.container div.container {
+#jumbotron article.left div.btn-container {
   margin: 30px 0 15px;
-}
-
-#jumbotron div.grey {
-  font-size: 14px;
-  font-style: italic;
-  color: rgb(72, 72, 74);
 }
 
 #jumbotron i.fa-arrow-down {
@@ -112,3 +119,87 @@ nav a.button {
 #jumbotron img {
   width: 740px;
 }
+
+/* main - plan section */
+#plan {
+  width: 74%;
+  margin: 150px auto;
+}
+
+#plan h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+#plan div.radio-container {
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+
+#mensile,
+#annuale {
+  vertical-align: middle;
+}
+
+label {
+  margin-right: 20px;
+}
+
+#plan .plan-container {
+  width: calc(100% / 3 - 60px);
+  height: 1000px;
+}
+
+#plan .topper-plan {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid rgb(199, 199, 204);
+}
+
+#plan .corpo-plan {
+  padding: 20px;
+  border: 1px solid rgb(199, 199, 204);
+  border-top: none;
+}
+
+#plan .corpo-plan h3 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+#plan .corpo-plan ul {
+  margin: 30px 0;
+}
+
+#plan .corpo-plan li {
+  font-size: 14px;
+  line-height: 20px;
+  list-style: none;
+  margin: 20px 0;
+}
+
+#plan .corpo-plan span.buy-now {
+  display: inline-block;
+  margin: 15px 0 30px;
+}
+
+#plan .corpo-plan span.buy-now a {
+  font-size: 14px;
+  color: rgba(1, 96, 254, 1);
+}
+
+#plan .corpo-plan hr {
+  width: 50px;
+  border: 1px solid rgba(199, 199, 204, 0.5);
+}
+
+#plan .corpo-plan i.fa-check {
+  display: inline-block;
+  color: rgba(1, 96, 254, 1);
+  margin-right: 5px;
+}
+
+
+
