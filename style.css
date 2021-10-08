@@ -147,21 +147,24 @@ label {
 }
 
 #plan .plan-container {
-  width: calc(100% / 3 - 60px);
-  height: 1000px;
+  width: calc(100% / 3 - 20px);
+  height: 875px;
+  border: 1px solid rgb(199, 199, 204);
 }
 
 #plan .topper-plan {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  border: 1px solid rgb(199, 199, 204);
+  border-bottom: 1px solid rgb(199, 199, 204);
 }
 
 #plan .corpo-plan {
   padding: 20px;
-  border: 1px solid rgb(199, 199, 204);
-  border-top: none;
+}
+
+#professional {
+  margin: 0 30px;
 }
 
 #plan .corpo-plan h3 {
@@ -174,10 +177,37 @@ label {
 }
 
 #plan .corpo-plan li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#plan .corpo-plan li i {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+  font-size: 16px;
+  color: rgba(1, 96, 254, 1);
+  margin-top: 2px;
+}
+
+.corpo-plan .btn-free{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(1, 96, 254, 1);
+  color: white;
+  text-decoration: none;
+}
+
+#btn-free {
+  background-color: rgb(199, 199, 204);
+}
+
+#plan .corpo-plan li span {
+  display: inline-block;
+  width: 87%;
   font-size: 14px;
   line-height: 20px;
-  list-style: none;
-  margin: 20px 0;
 }
 
 #plan .corpo-plan span.buy-now {
@@ -195,11 +225,6 @@ label {
   border: 1px solid rgba(199, 199, 204, 0.5);
 }
 
-#plan .corpo-plan i.fa-check {
-  display: inline-block;
-  color: rgba(1, 96, 254, 1);
-  margin-right: 5px;
-}
 
 
 
