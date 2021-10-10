@@ -286,13 +286,13 @@ span.buy-now a {
 }
 
 #business .card.left {
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 30px);
   height: 635px;
   margin-bottom: 40px;
 }
 
 #business .card.middle.left {
-  margin: 0 30px;
+  margin: 0 45px;
 }
 
 #business .card img {
@@ -382,4 +382,27 @@ span.buy-now a {
 
 #designit p {
   margin: 30px 0;
+}
+
+/* main - free-t section */
+#free-t {
+  background-color: rgba(180,208,231,1);
+}
+
+#free-t .container {
+  width: 74%;
+  margin: 0 auto;
+  padding: 100px 0 60px;
+}
+
+#free-t .container h2 {
+  width: 50%;
+  margin-bottom: none;
+  color: rgba(97,8,43,1);
+}
+
+#free-t .container .btn-container a{
+  background-color: white;
+  color: black;
+  padding: 12px 60px;
 }
