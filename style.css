@@ -167,8 +167,11 @@ label {
   margin: 0 30px;
 }
 
-#plan .corpo-plan h3 {
+#plan h3 {
   font-size: 20px;
+}
+
+#plan .corpo-plan h3 {
   margin: 15px 0;
 }
 
@@ -225,6 +228,29 @@ label {
   border: 1px solid rgba(199, 199, 204, 0.5);
 }
 
+#enterprise {
+  border: 1px solid rgb(199, 199, 204);
+  margin-top: 30px;
+}
+
+#enterprise .topper-enterprise {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid rgb(199, 199, 204);
+}
+
+#enterprise .corpo-enterprise {
+  padding: 20px;
+}
+
+#enterprise .corpo-enterprise > div.clearfix {
+  line-height: 42px;
+}
+
+#enterprise .corpo-enterprise h4 {
+  margin: 20px 0;
+}
 
 
 
