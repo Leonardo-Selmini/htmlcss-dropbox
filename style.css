@@ -25,6 +25,10 @@ body {
   position: relative;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 .btn-container {
   height: 42px;
   line-height: 42px;
@@ -167,10 +171,6 @@ label {
   margin: 0 30px;
 }
 
-#plan h3 {
-  font-size: 20px;
-}
-
 #plan .corpo-plan h3 {
   margin: 15px 0;
 }
@@ -252,5 +252,28 @@ label {
   margin: 20px 0;
 }
 
+/* main - partners section */
+#partners {
+  width: 74%;
+  margin: 0 auto;
+}
 
+#partners img {
+  width: 55%;
+}
 
+#partners article {
+  width: 45%;
+  padding: 40px;
+}
+
+#partners article p {
+  margin: 20px 0;
+}
+
+#btn-partner {
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
