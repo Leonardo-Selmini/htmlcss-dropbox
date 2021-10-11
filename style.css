@@ -44,10 +44,17 @@ p {
 }
 
 a.btn {
-  background-color: rgba(1, 96, 254, 1);
-  color: white;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
   text-decoration: none;
   padding: 10px;
+}
+
+a.btn:hover {
+  background-color: rgba(1, 96, 254, 1);
+  color: white;
+  border: 1px solid rgba(1, 96, 254, 1);
 }
 
 .grey {
@@ -83,15 +90,66 @@ header nav ul {
   display: inline-block;
 }
 
-header nav li {
+header nav .top-link {
   display: inline-block;
   list-style: none;
   margin-left: 30px;
 }
 
+header nav li.top-link:hover {
+  background-color: whitesmoke;
+  border-bottom: 1px solid black;
+}
+
+header nav .dropdown {
+  position: relative;
+  z-index: 1;
+}
+
+header nav .dropdown .dropdown-content {
+  display: none;
+  width: max-content;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  line-height: initial;
+  background-color: white;
+}
+
+header nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header nav .dropdown .dropdown-content li {
+  width: 190px;
+  font-size: 13px;
+  list-style: none;
+  padding: 6px 15px;
+}
+
+header nav .dropdown .dropdown-content ul li:hover {
+  background-color: whitesmoke;
+}
+
+#layover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+header nav .dropdown:hover ~ #layover {
+  display: block;
+}
+
 header nav li a {
   color: rgb(44, 44, 46);
   text-decoration: none;
+  padding: 5px;
 }
 
 nav .btn-container {
@@ -204,13 +262,19 @@ label {
   display: inline-block;
   width: 100%;
   text-align: center;
-  background-color: rgba(1, 96, 254, 1);
-  color: white;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
   text-decoration: none;
 }
 
+.corpo-plan .btn-free:hover {
+  background-color: rgba(1, 96, 254, 1);
+  color: white;
+}
+
 #btn-free {
-  background-color: rgb(199, 199, 204);
+  background-color: rgb(224, 224, 224);
 }
 
 #plan .corpo-plan li span {
@@ -278,6 +342,12 @@ span.buy-now a {
   background-color: white;
   color: black;
   border: 1px solid black;
+}
+
+#btn-partner:hover {
+  background-color: rgba(1, 96, 254, 1);
+  color: white;
+  border: 1px solid rgba(1, 96, 254, 1);
 }
 
 /* main - business section */
@@ -405,7 +475,12 @@ span.buy-now a {
 #free-t .container .btn-container a{
   background-color: white;
   color: black;
-  padding: 12px 60px;
+  padding: 10px 60px;
+}
+
+#free-t .container .btn-container a:hover {
+  background-color: rgba(1, 96, 254, 1);
+  color: white;
 }
 
 /* main - faq section */
@@ -449,12 +524,81 @@ span.buy-now a {
 
 #faq .container ul li p {
   display: none;
+  color: rgba(142, 142, 147, 1);
 }
 
 #faq .container ul li i {
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
 }
+
+/* footer */
+footer {
+  background-color: black;
+  padding: 50px 0;
+}
+
+footer .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer .container hr {
+  margin: 100px 0 50px;
+  width: 150px;
+}
+
+footer .container .list-container {
+  width: calc(100% / 5);
+  height: 227px;
+  color: white;
+}
+
+footer .container .list-container h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+footer .container .list-container li {
+  line-height: 30px;
+  list-style: none;
+}
+
+footer .container .language-dd {
+  display: inline-block;
+  position: relative;
+}
+
+footer .container .language-dd span {
+  color: white;
+  word-spacing: 5px;
+}
+
+footer .container .language-dd .dd-content {
+  display: none;
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  padding: 6px;
+}
+
+footer .container .language-dd:hover .dd-content {
+  display: block;
+}
+
+footer .container .language-dd:hover .dd-content li:hover {
+  background-color: whitesmoke;
+}
+
+footer .container .language-dd .dd-content ul li {
+  line-height: 30px;
+  color: black;
+  list-style: none;
+}
+
+
 
 
 
