@@ -25,13 +25,13 @@ body {
   position: relative;
 }
 
-h3 {
-  font-size: 20px;
-}
-
 h2 {
   font-size: 40px;
   margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 p {
@@ -68,6 +68,7 @@ header nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   background-color: white;
   line-height: 50px;
   padding: 0 12px;
@@ -365,7 +366,7 @@ span.buy-now a {
 }
 
 #team .team-container .logo-boxr .team-logo:nth-child(4) {
-  background-color: rgba(255,216,48,255);
+  background-color: rgba(255,216,48,1);
 }
 
 #designit {
@@ -406,3 +407,56 @@ span.buy-now a {
   color: black;
   padding: 12px 60px;
 }
+
+/* main - faq section */
+#faq .container {
+  width: 74%;
+  margin: 100px auto;
+}
+
+#faq .container h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#faq .container ul li {
+  width: 100%;
+  list-style: none;
+  border-top: 1px solid rgb(199, 199, 204);
+}
+
+#faq .container ul li:last-child {
+  border-bottom: 1px solid rgb(199, 199, 204);
+}
+
+#faq .container ul li:hover p{
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+#faq .container ul li:hover i {
+  transform: rotatex(180deg);
+}
+
+#faq .container ul li .text-box {
+  display: inline-block;
+  width: 80%;
+}
+
+#faq .container ul li h4 {
+  margin: 30px 0;
+}
+
+#faq .container ul li p {
+  display: none;
+}
+
+#faq .container ul li i {
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+
+
+
